@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PoketFlag - Save Your Links</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>🔖 PoketFlag</h1>
+    <p>Save, tag, and revisit your favorite links.</p>
+  </header>
+
+  <main class="container">
+    <form id="link-form" class="link-form">
+      <input type="url" id="url-input" placeholder="https://example.com" required />
+      <input type="text" id="title-input" placeholder="Title (optional)" />
+      <input type="text" id="tag-input" placeholder="Tags (comma separated)" />
+      <button type="submit">Save Link</button>
+    </form>
+
+    <div class="toolbar">
+      <input type="search" id="search-input" placeholder="Search saved links..." />
+      <select id="tag-filter">
+        <option value="">All tags</option>
+      </select>
+    </div>
+
+    <ul id="link-list" class="link-list"></ul>
+
+    <p id="empty-state" class="empty-state">No links saved yet. Add one above!</p>
+  </main>
+
+  <footer class="app-footer">
+    <p>PoketFlag &mdash; links are stored locally in your browser.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
